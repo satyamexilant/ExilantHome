@@ -17,7 +17,7 @@ class LoginViewController: UIViewController,UITextFieldDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        configure(userName)
+         configure(userName)
         configure(password)
         userName.becomeFirstResponder()
         userName.addTarget(self, action:#selector(LoginViewController.textDidChange(text:)) , for: UIControlEvents.editingChanged)
