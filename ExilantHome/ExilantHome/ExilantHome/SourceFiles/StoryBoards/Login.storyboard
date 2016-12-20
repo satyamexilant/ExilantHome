@@ -52,7 +52,7 @@
                                 </constraints>
                             </imageView>
                         </subviews>
-                        <color key="backgroundColor" red="0.94509803920000002" green="0.96078431369999995" blue="0.96470588239999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" name="controlHighlightColor" catalog="System" colorSpace="catalog"/>
                         <constraints>
                             <constraint firstItem="cbW-wj-4cG" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-40" id="4Ew-IT-02g"/>
                             <constraint firstItem="rGt-fl-PIM" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="MGv-N1-Evx"/>
