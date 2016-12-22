@@ -20,6 +20,7 @@ class MailViewController: UIViewController,UIWebViewDelegate,UITabBarDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.navigationItem.title = "Home"
         
         mailWebView.delegate = self
         tabbar.delegate = self
@@ -49,22 +50,42 @@ class MailViewController: UIViewController,UIWebViewDelegate,UITabBarDelegate {
             let url = NSURL(string: "https://mail.exilant.com/#1")
             let urlRequest = NSURLRequest(url: url! as URL)
             mailWebView.loadRequest(urlRequest as URLRequest)
+            self.navigationItem.title = "Mail"
         case 1:
             let url = NSURL(string: "https://exis.exilant.com/SSO/")
             let urlRequest = NSURLRequest(url: url! as URL)
             mailWebView.loadRequest(urlRequest as URLRequest)
+            self.navigationItem.title = "Time"
         case 2:
             let url = NSURL(string: "")
             let urlRequest = NSURLRequest(url: url! as URL)
             mailWebView.loadRequest(urlRequest as URLRequest)
-        default:
-            let url = NSURL(string: "https://mail.exilant.com/#1")
+            self.navigationItem.title = "Who"
+        case 3:
+            let url = NSURL(string: "")
             let urlRequest = NSURLRequest(url: url! as URL)
             mailWebView.loadRequest(urlRequest as URLRequest)
-        }
-        
+            self.navigationItem.title = "History"
 
+           
+        case 4:
+            let url = NSURL(string: "")
+            let urlRequest = NSURLRequest(url: url! as URL)
+            mailWebView.loadRequest(urlRequest as URLRequest)
+            self.navigationItem.title = "More"
+        default:
+            let url = NSURL(string: "")
+            let urlRequest = NSURLRequest(url: url! as URL)
+            mailWebView.loadRequest(urlRequest as URLRequest)
+            
+        }
     }
+    //MARK:-logout Action
     
-    
+    @IBAction func logout(_ sender: AnyObject) {
+        let viewController:UIViewController = UIStoryboard(name: "Login", bundle: nil).instantiateViewController(withIdentifier: "Login") as UIViewController
+        self.present(viewController, animated: false, completion: nil)
+    }
 }
+    
+

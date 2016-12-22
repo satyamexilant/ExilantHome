@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="1IV-CR-bcX">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="WWg-J0-0Du">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
@@ -9,7 +9,7 @@
         <!--Login View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="LoginViewController" customModule="ExilantHome" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Login" id="BYZ-38-t0r" customClass="LoginViewController" customModule="ExilantHome" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -64,14 +64,14 @@
                         <outlet property="login" destination="pEA-AY-xXz" id="VPu-ni-dww"/>
                         <outlet property="password" destination="I5T-Qz-wok" id="PHl-Cn-EOt"/>
                         <outlet property="userName" destination="Gnj-wI-4Es" id="5Xz-ah-7jM"/>
-                        <segue destination="1IV-CR-bcX" kind="show" identifier="Home" id="haj-SL-swr"/>
+                        <segue destination="WWg-J0-0Du" kind="show" identifier="Home" id="haj-SL-swr"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="502" y="36"/>
         </scene>
-        <!--Mail-->
+        <!--Mail View Controller-->
         <scene sceneID="zpu-tn-mqN">
             <objects>
                 <viewController id="1IV-CR-bcX" customClass="MailViewController" customModule="ExilantHome" customModuleProvider="target" sceneMemberID="viewController">
@@ -84,44 +84,41 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jhg-U1-uag">
-                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                <color key="tintColor" red="0.56078431370000004" green="0.5450980392" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
-                            </webView>
-                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dqZ-nx-nQt">
                                 <color key="backgroundColor" red="0.63137254899999995" green="0.63529411759999999" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
-                                <items>
-                                    <navigationItem title="MAIL" id="Un3-eY-Cs2">
-                                        <barButtonItem key="leftBarButtonItem" image="ListDown" id="tOZ-Mi-a50"/>
-                                    </navigationItem>
-                                </items>
-                            </navigationBar>
+                                <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            </webView>
                             <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="4cM-sT-1XC"/>
-                            <tabBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4ry-fD-6Et">
-                                <frame key="frameInset" height="49"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                            <tabBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4ry-fD-6Et">
                                 <color key="backgroundColor" red="0.63137254899999995" green="0.63529411759999999" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <items>
                                     <tabBarItem title="Mail" image="Mail" id="cEx-OQ-7Oc"/>
                                     <tabBarItem tag="1" title="Time" image="Time" id="V4G-RZ-FL6"/>
-                                    <tabBarItem tag="2" systemItem="more" id="fV8-CI-BLu"/>
+                                    <tabBarItem tag="2" title="Who" image="Who" id="Ts8-VT-9aI"/>
+                                    <tabBarItem tag="3" systemItem="history" id="R0b-iC-76j"/>
+                                    <tabBarItem tag="4" systemItem="more" id="fV8-CI-BLu"/>
                                 </items>
-                                <color key="tintColor" red="0.63137254899999995" green="0.63529411759999999" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
                             </tabBar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="jhg-U1-uag" firstAttribute="leading" secondItem="xRx-Kq-KZr" secondAttribute="leading" id="0A3-ZK-P95"/>
+                            <constraint firstAttribute="trailing" secondItem="jhg-U1-uag" secondAttribute="trailing" id="2Sz-eH-M8u"/>
                             <constraint firstItem="4cM-sT-1XC" firstAttribute="centerX" secondItem="xRx-Kq-KZr" secondAttribute="centerX" id="2en-ay-XjY"/>
                             <constraint firstItem="4cM-sT-1XC" firstAttribute="centerY" secondItem="xRx-Kq-KZr" secondAttribute="centerY" id="7Uj-PQ-4KW"/>
-                            <constraint firstItem="dqZ-nx-nQt" firstAttribute="leading" secondItem="xRx-Kq-KZr" secondAttribute="leading" id="E8V-zu-6gm"/>
-                            <constraint firstItem="jhg-U1-uag" firstAttribute="top" secondItem="dqZ-nx-nQt" secondAttribute="bottom" id="Hd8-Tg-I3c"/>
-                            <constraint firstItem="dqZ-nx-nQt" firstAttribute="top" secondItem="xRx-Kq-KZr" secondAttribute="top" id="Ps1-DQ-6KX"/>
-                            <constraint firstAttribute="trailing" secondItem="jhg-U1-uag" secondAttribute="trailing" id="SYq-JF-aAx"/>
-                            <constraint firstItem="PPz-n7-XF5" firstAttribute="top" secondItem="jhg-U1-uag" secondAttribute="bottom" id="Wrw-Ky-nno"/>
-                            <constraint firstAttribute="trailing" secondItem="dqZ-nx-nQt" secondAttribute="trailing" id="owT-DI-X4k"/>
+                            <constraint firstItem="4ry-fD-6Et" firstAttribute="leading" secondItem="jhg-U1-uag" secondAttribute="leading" id="I85-7A-fxd"/>
+                            <constraint firstItem="4ry-fD-6Et" firstAttribute="trailing" secondItem="jhg-U1-uag" secondAttribute="trailing" id="IQq-94-Ywz"/>
+                            <constraint firstItem="4ry-fD-6Et" firstAttribute="top" secondItem="jhg-U1-uag" secondAttribute="bottom" constant="9" id="IT7-Zv-IRJ"/>
+                            <constraint firstItem="4ry-fD-6Et" firstAttribute="bottom" secondItem="PPz-n7-XF5" secondAttribute="top" id="Yy4-Vq-YfQ"/>
+                            <constraint firstItem="jhg-U1-uag" firstAttribute="top" secondItem="xRx-Kq-KZr" secondAttribute="top" id="gEx-nr-7Wk"/>
+                            <constraint firstItem="jhg-U1-uag" firstAttribute="leading" secondItem="xRx-Kq-KZr" secondAttribute="leading" id="tNH-PC-MB4"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Mail" image="Mail" id="U5y-p4-5gy"/>
+                    <navigationItem key="navigationItem" id="5R3-Ro-5GM">
+                        <barButtonItem key="rightBarButtonItem" image="Logout" id="Szy-GP-kSi">
+                            <connections>
+                                <action selector="logout:" destination="1IV-CR-bcX" id="U4h-h1-WOo"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="mailWebView" destination="jhg-U1-uag" id="nL7-Rl-UE2"/>
                         <outlet property="mailindicator" destination="4cM-sT-1XC" id="Cz0-nk-3eX"/>
@@ -130,14 +127,34 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Pen-Ij-k91" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1388" y="36"/>
+            <point key="canvasLocation" x="2327.1999999999998" y="35.532233883058474"/>
+        </scene>
+        <!--Mail-->
+        <scene sceneID="o0g-gi-XL4">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="WWg-J0-0Du" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Mail" image="Mail" id="U5y-p4-5gy"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="vO7-Sk-UN3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="1IV-CR-bcX" kind="relationship" relationship="rootViewController" id="FFJ-Zq-X5p"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6xI-Pr-B4A" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1388" y="35.532233883058474"/>
         </scene>
     </scenes>
     <resources>
         <image name="Exilant.png" width="290" height="176"/>
-        <image name="ListDown" width="25" height="25"/>
+        <image name="Logout" width="25" height="25"/>
         <image name="Mail" width="25" height="25"/>
         <image name="Time" width="25" height="25"/>
+        <image name="Who" width="25" height="25"/>
     </resources>
-    <color key="tintColor" red="0.56078431370000004" green="0.5450980392" blue="0.95686274510000002" alpha="0.81000000000000005" colorSpace="calibratedRGB"/>
+    <color key="tintColor" red="0.086274509799999996" green="0.40000000000000002" blue="0.97254901959999995" alpha="1" colorSpace="calibratedRGB"/>
 </document>
