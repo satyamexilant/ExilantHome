@@ -7,13 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7589CD851E092839004F42DC /* MailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7589CD841E092839004F42DC /* MailViewController.swift */; };
 		75E08B361E08FD89006CC44D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 75E08B351E08FD89006CC44D /* Assets.xcassets */; };
 		75E08B441E08FD89006CC44D /* ExilantHomeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75E08B431E08FD89006CC44D /* ExilantHomeTests.swift */; };
 		75E08B4F1E08FD89006CC44D /* ExilantHomeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75E08B4E1E08FD89006CC44D /* ExilantHomeUITests.swift */; };
 		75E08B621E08FEB4006CC44D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75E08B611E08FEB4006CC44D /* AppDelegate.swift */; };
 		75E08B641E08FED2006CC44D /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75E08B631E08FED2006CC44D /* LoginViewController.swift */; };
 		75E08B681E08FF61006CC44D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75E08B661E08FF61006CC44D /* LaunchScreen.storyboard */; };
-		75E08B691E08FF61006CC44D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75E08B671E08FF61006CC44D /* Main.storyboard */; };
 		75E08B7F1E0902CD006CC44D /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75E08B7E1E0902CD006CC44D /* Login.storyboard */; };
 		75E08B891E0902E8006CC44D /* VIVO.png in Resources */ = {isa = PBXBuildFile; fileRef = 75E08B801E0902E8006CC44D /* VIVO.png */; };
 		75E08B8A1E0902E8006CC44D /* ME.png in Resources */ = {isa = PBXBuildFile; fileRef = 75E08B811E0902E8006CC44D /* ME.png */; };
@@ -44,6 +44,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7589CD841E092839004F42DC /* MailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MailViewController.swift; sourceTree = "<group>"; };
 		75E08B2B1E08FD89006CC44D /* ExilantHome.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExilantHome.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		75E08B351E08FD89006CC44D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		75E08B3A1E08FD89006CC44D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -56,7 +57,6 @@
 		75E08B611E08FEB4006CC44D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = SourceFiles/AppDelegate/AppDelegate.swift; sourceTree = "<group>"; };
 		75E08B631E08FED2006CC44D /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LoginViewController.swift; path = SourceFiles/ViewControllers/LoginViewController.swift; sourceTree = "<group>"; };
 		75E08B661E08FF61006CC44D /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = SourceFiles/StoryBoards/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		75E08B671E08FF61006CC44D /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Main.storyboard; path = SourceFiles/StoryBoards/Main.storyboard; sourceTree = "<group>"; };
 		75E08B7E1E0902CD006CC44D /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Login.storyboard; path = SourceFiles/StoryBoards/Login.storyboard; sourceTree = "<group>"; };
 		75E08B801E0902E8006CC44D /* VIVO.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = VIVO.png; path = SourceFiles/Resources/VIVO.png; sourceTree = "<group>"; };
 		75E08B811E0902E8006CC44D /* ME.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ME.png; path = SourceFiles/Resources/ME.png; sourceTree = "<group>"; };
@@ -166,6 +166,7 @@
 			isa = PBXGroup;
 			children = (
 				75E08B631E08FED2006CC44D /* LoginViewController.swift */,
+				7589CD841E092839004F42DC /* MailViewController.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -198,7 +199,6 @@
 			children = (
 				75E08B7E1E0902CD006CC44D /* Login.storyboard */,
 				75E08B661E08FF61006CC44D /* LaunchScreen.storyboard */,
-				75E08B671E08FF61006CC44D /* Main.storyboard */,
 			);
 			name = StoryBoards;
 			sourceTree = "<group>";
@@ -324,7 +324,6 @@
 				75E08B911E0902E8006CC44D /* Launch_Icon.png in Resources */,
 				75E08B7F1E0902CD006CC44D /* Login.storyboard in Resources */,
 				75E08B681E08FF61006CC44D /* LaunchScreen.storyboard in Resources */,
-				75E08B691E08FF61006CC44D /* Main.storyboard in Resources */,
 				75E08B361E08FD89006CC44D /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -352,6 +351,7 @@
 			files = (
 				75E08B641E08FED2006CC44D /* LoginViewController.swift in Sources */,
 				75E08B621E08FEB4006CC44D /* AppDelegate.swift in Sources */,
+				7589CD851E092839004F42DC /* MailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

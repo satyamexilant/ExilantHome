@@ -52,7 +52,7 @@ class LoginViewController: UIViewController,UITextFieldDelegate {
     @IBAction func loginUser(_ sender: UIButton) {
         // service to check username and password if true move to nextview controller else show alert
         
-        performSegue(withIdentifier: "viewAllApps", sender:self)
+        performSegue(withIdentifier: "Home", sender:self)
     }
     
     private func configure(_ view: UIView) {
